@@ -1,0 +1,47 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7081
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "UpstreamPathTemplate": "/api1",
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7082
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "UpstreamPathTemplate": "/api2"
+    },
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7083
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "UpstreamPathTemplate": "/api3"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://locahost:8500"
+  }
+}

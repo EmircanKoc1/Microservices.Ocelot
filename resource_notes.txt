@@ -1,0 +1,5 @@
+API 1   :	https://localhost:7081
+API 2   :	https://localhost:7082
+API 3   :	https://localhost:7083
+
+Ocelot : https://localhost:8500
