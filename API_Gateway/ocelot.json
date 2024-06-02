@@ -17,6 +17,25 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/admin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7081
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "UpstreamPathTemplate": "/api1/admin",
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Admin"
+      }
+    },
+    {
       "DownstreamPathTemplate": "/",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
